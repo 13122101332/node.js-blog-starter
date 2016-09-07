@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20fab3fe-20fc-47f4-9a82-4be25ea787c0}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>app.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Compile Include="app.js" />
+    <Compile Include="config.js" />
+    <Compile Include="routes.js" />
+    <Compile Include="config\admin_config.js" />
+    <Compile Include="config\akismet_config.js" />
+    <Compile Include="config\blog_config.js" />
+    <Compile Include="config\db_config.js" />
+    <Compile Include="config\marked_config.js" />
+    <Compile Include="config\rss_config.js" />
+    <Compile Include="libs\util.js" />
+    <Compile Include="models\admin.js" />
+    <Compile Include="models\comment.js" />
+    <Compile Include="models\db.js" />
+    <Compile Include="models\link.js" />
+    <Compile Include="models\page.js" />
+    <Compile Include="models\post.js" />
+    <Compile Include="models\tag.js" />
+    <Compile Include="route\admin.js" />
+    <Compile Include="route\blog.js" />
+    <Compile Include="test\factories.js" />
+    <Compile Include="test\_init.js" />
+    <Content Include="public\images\favicon.ico" />
+    <Compile Include="public\javascripts\cal.js" />
+    <Content Include="public\images\admin\created.png" />
+    <Content Include="public\images\admin\next.png" />
+    <Content Include="public\images\admin\slug.png" />
+    <Content Include="public\images\admin\tags.png" />
+    <Content Include="public\images\admin\title.png" />
+    <Content Include="public\images\admin\wmd-buttons.png" />
+    <Content Include="public\images\admin\write.png" />
+    <Content Include="public\images\blog\footersub.png" />
+    <Content Include="public\images\blog\header.png" />
+    <Content Include="public\images\blog\icons.png" />
+    <Content Include="public\images\blog\bg.jpg" />
+    <Content Include="public\images\blog\backtop.gif" />
+    <Content Include="public\images\blog\error404.gif" />
+    <Content Include="public\javascripts\pagedown\LICENSE.txt" />
+    <Compile Include="public\javascripts\pagedown\Markdown.Converter.js" />
+    <Compile Include="public\javascripts\pagedown\Markdown.Editor.js" />
+    <Compile Include="public\javascripts\pagedown\Markdown.Sanitizer.js" />
+    <Compile Include="public\javascripts\prettify\lang-apollo.js" />
+    <Compile Include="public\javascripts\prettify\lang-clj.js" />
+    <Compile Include="public\javascripts\prettify\lang-css.js" />
+    <Compile Include="public\javascripts\prettify\lang-go.js" />
+    <Compile Include="public\javascripts\prettify\lang-hs.js" />
+    <Compile Include="public\javascripts\prettify\lang-lisp.js" />
+    <Compile Include="public\javascripts\prettify\lang-lua.js" />
+    <Compile Include="public\javascripts\prettify\lang-ml.js" />
+    <Compile Include="public\javascripts\prettify\lang-n.js" />
+    <Compile Include="public\javascripts\prettify\lang-proto.js" />
+    <Compile Include="public\javascripts\prettify\lang-scala.js" />
+    <Compile Include="public\javascripts\prettify\lang-sql.js" />
+    <Compile Include="public\javascripts\prettify\lang-tex.js" />
+    <Compile Include="public\javascripts\prettify\lang-vb.js" />
+    <Compile Include="public\javascripts\prettify\lang-vhdl.js" />
+    <Compile Include="public\javascripts\prettify\lang-wiki.js" />
+    <Compile Include="public\javascripts\prettify\lang-xq.js" />
+    <Compile Include="public\javascripts\prettify\lang-yaml.js" />
+    <Compile Include="public\javascripts\prettify\prettify.js" />
+    <Content Include="public\stylesheets\admin\style.css" />
+    <Content Include="public\stylesheets\blog\style.css" />
+    <Compile Include="test\models\admin.js" />
+    <Content Include="views\admin\add.html" />
+    <Content Include="views\admin\home.html" />
+    <Content Include="views\admin\install.html" />
+    <Content Include="views\admin\login.html" />
+    <Content Include="views\admin\verify_akismet.html" />
+    <Content Include="views\blog\archives.html" />
+    <Content Include="views\blog\index.html" />
+    <Content Include="views\blog\layout.html" />
+    <Content Include="views\blog\links.html" />
+    <Content Include="views\blog\page.html" />
+    <Content Include="views\blog\post.html" />
+    <Content Include="views\blog\tag.html" />
+    <Content Include="views\admin\comment\index.html" />
+    <Content Include="views\admin\common\extend_js.html" />
+    <Content Include="views\admin\common\javascripts.html" />
+    <Content Include="views\admin\common\stylesheets.html" />
+    <Content Include="views\admin\common\title.html" />
+    <Content Include="views\admin\page\edit.html" />
+    <Content Include="views\admin\page\index.html" />
+    <Content Include="views\admin\page\write.html" />
+    <Content Include="views\admin\post\edit.html" />
+    <Content Include="views\admin\post\index.html" />
+    <Content Include="views\admin\post\write.html" />
+    <Content Include="views\admin\public\error.html" />
+    <Content Include="views\blog\common\back_to_top.html" />
+    <Content Include="views\blog\common\footer.html" />
+    <Content Include="views\blog\common\header.html" />
+    <Content Include="views\blog\common\javascripts.html" />
+    <Content Include="views\blog\common\menu.html" />
+    <Content Include="views\blog\common\stylesheets.html" />
+    <Content Include="views\blog\public\404.html" />
+    <Content Include="views\blog\public\500.html" />
+    <Content Include="views\blog\public\error.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config" />
+    <Folder Include="libs" />
+    <Folder Include="models" />
+    <Folder Include="public" />
+    <Folder Include="public\images" />
+    <Folder Include="public\images\admin" />
+    <Folder Include="public\images\blog" />
+    <Folder Include="public\javascripts" />
+    <Folder Include="public\javascripts\pagedown" />
+    <Folder Include="public\javascripts\prettify" />
+    <Folder Include="public\stylesheets" />
+    <Folder Include="public\stylesheets\admin" />
+    <Folder Include="public\stylesheets\blog" />
+    <Folder Include="route" />
+    <Folder Include="test" />
+    <Folder Include="test\models" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\bcrypt\" />
+    <Folder Include="typings\globals\chai\" />
+    <Folder Include="typings\globals\connect-mongo\" />
+    <Folder Include="typings\globals\ejs\" />
+    <Folder Include="typings\globals\express-partials\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\gravatar\" />
+    <Folder Include="typings\globals\marked\" />
+    <Folder Include="typings\globals\mocha\" />
+    <Folder Include="typings\globals\moment\" />
+    <Folder Include="typings\globals\mongoose\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="views" />
+    <Folder Include="views\admin" />
+    <Folder Include="views\admin\comment" />
+    <Folder Include="views\admin\common" />
+    <Folder Include="views\admin\page" />
+    <Folder Include="views\admin\post" />
+    <Folder Include="views\admin\public" />
+    <Folder Include="views\blog" />
+    <Folder Include="views\blog\common" />
+    <Folder Include="views\blog\public" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\bcrypt\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\chai\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\connect-mongo\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\ejs\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-partials\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\gravatar\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\marked\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mocha\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\moment\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mongoose\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

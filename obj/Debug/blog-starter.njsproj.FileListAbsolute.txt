@@ -1,0 +1,2 @@
+C:\Users\qilin\Source\Repos\node.js-blog-starter\obj\Debug\blog-starter.njsprojResolveAssemblyReference.cache
+C:\Users\qilin\Source\Repos\node.js-blog-starter\bin\Microsoft.NodejsTools.WebRole.dll

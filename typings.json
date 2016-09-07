@@ -1,0 +1,16 @@
+{
+  "globalDependencies": {
+    "bcrypt": "registry:dt/bcrypt#0.0.0+20160316155526",
+    "chai": "registry:dt/chai#3.4.0+20160601211834",
+    "connect-mongo": "registry:dt/connect-mongo#0.0.0+20160317120654",
+    "ejs": "registry:dt/ejs#0.0.0+20160317120654",
+    "express": "registry:dt/express#4.0.0+20160708185218",
+    "express-partials": "registry:dt/express-partials#0.0.0+20160316155526",
+    "gravatar": "registry:dt/gravatar#1.4.0+20160317120654",
+    "marked": "registry:dt/marked#0.0.0+20160325085301",
+    "mocha": "registry:dt/mocha#2.2.5+20160720003353",
+    "moment": "registry:dt/moment#2.11.1+20160829143156",
+    "mongoose": "registry:dt/mongoose#4.5.9+20160826204928",
+    "node": "registry:dt/node#6.0.0+20160907103612"
+  }
+}
